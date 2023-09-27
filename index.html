@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Igor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">&lt;/Igor&gt;</a>
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portifolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="conteudo-principal">
+            <section id="home-content" class="home-content">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="txt-home">
+                            <h1>Olá, eu sou <br> Igor Costa</h1>
+                            <h2>Desenvolvedor back-end</h2>
+                            <p>Olá, sou Igor Costa desenvolvedor back-end, atualmente cursando Análise e Desenvolvimento de Sistemas na FATEC-Cruzeiro. Faço estágio na Secretaria Municipal de Educação de Cruzeiro-SP.</p>
+        
+
+                            <a rel="external" class="btn-contato" id>
+                                <button id="oi">Vamos conversar?</button>
+                            </a>
+        
+                        </div> <!--txt-home-->
+        
+                        <div class="home-pic">
+                            <img class="home-picture" src="profile-pic.PNG" alt="Profile Pic" />
+                        </div><!--home-pic-->
+        
+                    </div><!--flex-->
+                </div><!--interface-->
+            </section><!--home-content-->
+
+            <section id="portifolio">
+                <div class="interface">
+                    <h2 class="titulo">Pro<span>jetos</span></h2>
+                    <div class="flex">
+            
+                        <a href="https://www.github.com/Igao2/Gerenciador-de-Escola" target="_blank">
+                            <div class="img-port"
+                                style="background-image: url(1.jpeg);">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
+            
+                        <a href="https://www.github.com/Igao2/Assistente-Pessoal" target="_blank">
+                            <div class="img-port" style="background-image: url(2.jpeg);">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
+            
+                        <a href="https://www.github.com/Igao2/Lover-anonymous" target="_blank">
+                            <div class="img-port"
+                                style="background-image: url(3.jpeg);">
+                            </div>
+                        </a>
+            
+            
+                        <a href="https://www.github.com/Igao2/Bar-Route" target="_blank">
+                            <div class="img-port" style="background-image: url(4.jpeg);">
+                            </div>
+                        </a>
+            
+                        <a href="https://www.github.com/Igao2/Quiz-do-pagode" target="_blank">
+                            <div class="img-port"
+                                style="background-image: url(5.jpeg);">
+                            </div>
+                        </a>
+            
+                       
+            
+                    </div>
+                </div><!--interface-->
+            </section><!--portifolio-->
+
+            <section id="contato">
+                <div class="interface">
+                    <h2 class="titulo">Con<span>tato</span></h2>
+            
+                    <div class="contato">
+                        <img src="undraw_developer_activity_re_39tg.svg" alt="">
+                        
+                        <form method="post" id="form1" onsubmit="
+                        var email = document.getElementById('email').value
+                        var arroba = '@'
+                        var com = '.com'
+                        if(email.includes(arroba)&&email.includes(com))
+                        {
+                            setTimeout(function(){
+                            window.location.reload();},10);
+                        }
+                        else{
+                            alert('Preencha um email válido')
+                            event.preventDefault()
+                        }
+                            
+                        ">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required placeholder="Seu nome">
+                        
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" id="email" required placeholder="Digite o seu e-mail">
+                        
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="mensagem" id="" required placeholder="Mensagem"></textarea>
+                        
+                            <div class="btn-enviar">
+                                <button type="submit" data-button>Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!--interface-->
+            </section><!--contato-->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
