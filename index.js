@@ -12,7 +12,7 @@ secure: false,
 auth:
 {
     user:'projetohelpy1@outlook.com',
-    pass:'Cientista232@'
+    pass:'Cientista7472@'
 }
 })
 
